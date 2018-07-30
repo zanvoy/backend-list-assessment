@@ -1,0 +1,1 @@
+For this assessment, the comments in the [list1.py](./list1.py) file will explain how to complete each function.
