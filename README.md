@@ -7,7 +7,7 @@ work in python in terms of argument passing and return values, but you should
 be able to figure it out as you go.
 
 [list1.py](./list1.py) -- Complete the list functions in list1.py,
-based on your knowledge of Python strings, indexing, slicing, and methods.
+based on your knowledge of Python list iteration and indexing.
 
 [list2.py](./list2.py) -- Additional list function completions.
 
