@@ -14,6 +14,7 @@
 # all adjacent == elements have been reduced to a single element,
 # so [1, 2, 2, 3] returns [1, 2, 3]. You may create a new list or
 # modify the passed in list.
+# Hint: Don't use `set()`
 def remove_adjacent(nums):
     """Your code goes here.  Edit this docstring."""
     return
@@ -21,8 +22,8 @@ def remove_adjacent(nums):
 
 # E. Given two lists sorted in increasing order, create and return a merged
 # list of all the elements in sorted order. You may modify the passed in lists.
-# Ideally, the solution should work in "linear" time, making a single
-# pass of both lists.
+# The solution should work in "linear" time, making a single pass of both lists.
+# Hint: Don't use `sort` or `sorted` -- they are not linear time.
 def linear_merge(list1, list2):
     """Your code goes here.  Edit this docstring."""
     return
@@ -45,6 +46,7 @@ def main():
     test(remove_adjacent([1, 2, 2, 3]), [1, 2, 3])
     test(remove_adjacent([2, 2, 3, 3, 3]), [2, 3])
     test(remove_adjacent([]), [])
+    test(remove_adjacent([2, 2, 3, 3, 3, 4, 5, 2, 3]), [2, 3, 4, 5, 2, 3])
 
     print('linear_merge')
     test(linear_merge(['aa', 'xx', 'zz'], ['bb', 'cc']),
