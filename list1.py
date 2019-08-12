@@ -22,6 +22,8 @@
 # strings where the string length is 2 or more and the first
 # and last chars of the string are the same.
 # Note: python does not have a ++ operator, but += works.
+
+
 def match_ends(words):
     """Your code goes here.  Edit this docstring."""
     return
@@ -80,8 +82,8 @@ def main():
          [(2, 1), (3, 2), (1, 3)])
     test(sort_last([(2, 3), (1, 2), (3, 1)]),
          [(3, 1), (1, 2), (2, 3)])
-    test(sort_last([(1, 7), (1, 3), (3, 4, 5), (2, 2)]),
-         [(2, 2), (1, 3), (3, 4, 5), (1, 7)])
+    test(sort_last([(1, 7), (1, 3), (3, 9, 4), (2, 2)]),
+         [(2, 2), (1, 3), (3, 9, 4), (1, 7)])
 
 
 # Standard boilerplate (python idiom) to call the main() function.
