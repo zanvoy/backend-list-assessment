@@ -5,6 +5,8 @@
 # Licensed under the Apache License, Version 2.0
 # http://www.apache.org/licenses/LICENSE-2.0
 
+__author__ = 'Mike Gabbard'
+
 # Google's Python Class
 # http://code.google.com/edu/languages/google-python-class/
 
@@ -26,7 +28,11 @@
 
 def match_ends(words):
     """Your code goes here.  Edit this docstring."""
-    return
+    output = 0
+    for i in words:
+        if len(i) > 1 and i[0] == i[-1]:
+            output += 1
+    return output
 
 
 # B. front_x
@@ -38,7 +44,16 @@ def match_ends(words):
 # before combining them.
 def front_x(words):
     """Your code goes here.  Edit this docstring."""
-    return
+    list_a = []
+    list_x = []
+    for i in words:
+        if i[0] == 'x':
+            list_x.append(i)
+        else:
+            list_a.append(i)
+    list_a.sort()
+    list_x.sort()
+    return list_x + list_a
 
 
 # C. sort_last
@@ -49,7 +64,24 @@ def front_x(words):
 # Hint: use a custom key= function to extract the last element form each tuple.
 def sort_last(tuples):
     """Your code goes here.  Edit this docstring."""
-    return
+    output = []
+    only_tuples = []
+    other_stuff = []
+
+    for index, item in enumerate(tuples):
+        if len(item) == 2:
+            only_tuples.append(item)
+        else:
+            other_stuff.append((index, item))
+
+    def tuple_key(i):
+        return i[1]
+
+    only_tuples.sort(key=tuple_key)
+    output.extend(only_tuples)
+    for i in other_stuff:
+        output.insert(i[0], i[1])
+    return output
 
 
 # Simple provided test() function used in main() to print
