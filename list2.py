@@ -5,6 +5,8 @@
 # Licensed under the Apache License, Version 2.0
 # http://www.apache.org/licenses/LICENSE-2.0
 
+__author__ = 'Mike Gabbard'
+
 # Google's Python Class
 # http://code.google.com/edu/languages/google-python-class/
 
